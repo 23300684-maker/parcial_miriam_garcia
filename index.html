@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -194,14 +193,18 @@
 </head>
 
 <body>
+
   <header>
     <h1>CALVIN KLEIN</h1>
     <p>Estilo contemporáneo en cada paso</p>
   </header>
 
   <main>
+
     <section class="producto">
+
       <div class="visor">
+
         <model-viewer
           src="modelo.glb"
           alt="Modelo tridimensional de las zapatillas Tegin para mujer de Calvin Klein"
@@ -215,13 +218,19 @@
           exposure="1"
           touch-action="pan-y">
 
-          <button class="ar-button" slot="ar-button" type="button">
+          <button
+            class="ar-button"
+            slot="ar-button"
+            type="button">
             Ver en mi espacio
           </button>
+
         </model-viewer>
+
       </div>
 
       <div class="informacion">
+
         <h2>Tegin para mujer</h2>
 
         <p class="descripcion">
@@ -236,10 +245,17 @@
           <li>Ideales para mujeres amantes de la moda y las tendencias.</li>
         </ul>
 
-        <p class="precio-anterior">Precio: COP $217.785,64</p>
-        <p class="precio-actual">Oferta: COP $152.449,95</p>
+        <p class="precio-anterior">
+          Precio: COP $217.785,64
+        </p>
 
-        <span class="descuento">30% DE DESCUENTO</span>
+        <p class="precio-actual">
+          Oferta: COP $152.449,95
+        </p>
+
+        <span class="descuento">
+          30% DE DESCUENTO
+        </span>
 
         <br><br>
 
@@ -250,22 +266,31 @@
           rel="noopener noreferrer">
           Comprar ahora
         </a>
+
       </div>
+
     </section>
 
     <section class="qr-section">
+
       <h2>Explora las Tegin desde tu celular</h2>
+
       <p>
         Escanea el código QR para abrir la experiencia y visualizar
         las zapatillas en realidad aumentada desde un dispositivo compatible.
       </p>
 
       <div id="qrCode"></div>
+
     </section>
+
   </main>
 
   <footer>
-    <p>Calvin Klein · <span>Experiencia comercial WebAR</span></p>
+    <p>
+      Calvin Klein ·
+      <span>Experiencia comercial WebAR</span>
+    </p>
   </footer>
 
   <script>
@@ -276,6 +301,6 @@
       correctLevel: QRCode.CorrectLevel.H
     });
   </script>
+
 </body>
 </html>
-```
