@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Urban | Gorra de béisbol en WebAR</title>
+  <title>Calvin Klein | Tegin para mujer en WebAR</title>
 
   <script
     type="module"
@@ -15,10 +16,11 @@
 
   <style>
     :root {
-      --color-principal: #000000;
-      --color-secundario: #ffffff;
-      --color-gris: #eeeeee;
-      --color-promocion: #d71920;
+      --color-principal: #0B0B0B;
+      --color-secundario: #FFFFFF;
+      --color-gris: #242424;
+      --color-promocion: #D4AF37;
+      --color-champagne: #F3E5C8;
     }
 
     * {
@@ -44,6 +46,10 @@
     header h1 {
       font-size: 2rem;
       letter-spacing: 3px;
+    }
+
+    header p {
+      color: var(--color-champagne);
     }
 
     main {
@@ -79,8 +85,8 @@
       border: none;
       border-radius: 30px;
       padding: 14px 24px;
-      background-color: var(--color-principal);
-      color: var(--color-secundario);
+      background-color: var(--color-promocion);
+      color: var(--color-principal);
       font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
@@ -101,6 +107,10 @@
       padding-left: 22px;
     }
 
+    .beneficios li::marker {
+      color: var(--color-promocion);
+    }
+
     .precio-anterior {
       color: #666666;
       font-size: 1.1rem;
@@ -110,6 +120,16 @@
     .precio-actual {
       color: var(--color-promocion);
       font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .descuento {
+      display: inline-block;
+      background-color: var(--color-principal);
+      color: var(--color-promocion);
+      padding: 5px 10px;
+      border-radius: 20px;
       font-weight: bold;
       margin-bottom: 20px;
     }
@@ -132,7 +152,7 @@
     .qr-section {
       margin-top: 45px;
       padding: 30px;
-      background-color: var(--color-gris);
+      background-color: var(--color-champagne);
       border-radius: 18px;
       text-align: center;
     }
@@ -149,6 +169,10 @@
       background-color: var(--color-principal);
       color: var(--color-secundario);
       text-align: center;
+    }
+
+    footer span {
+      color: var(--color-promocion);
     }
 
     @media (max-width: 800px) {
@@ -171,8 +195,8 @@
 
 <body>
   <header>
-    <h1>URBAN</h1>
-    <p>Estilo urbano en cada detalle</p>
+    <h1>CALVIN KLEIN</h1>
+    <p>Estilo contemporáneo en cada paso</p>
   </header>
 
   <main>
@@ -180,7 +204,7 @@
       <div class="visor">
         <model-viewer
           src="modelo.glb"
-          alt="Modelo tridimensional de una gorra de béisbol"
+          alt="Modelo tridimensional de las zapatillas Tegin para mujer de Calvin Klein"
           ar
           ar-modes="webxr scene-viewer quick-look"
           ar-placement="floor"
@@ -198,25 +222,30 @@
       </div>
 
       <div class="informacion">
-        <h2>Gorra de béisbol New Era</h2>
+        <h2>Tegin para mujer</h2>
 
         <p class="descripcion">
-          Gorra de béisbol New Era con estilo urbano, diseño auténtico y
-          ajuste cómodo, ideal para complementar cualquier look casual.
+          Las Tegin para mujer combinan el estilo moderno de Calvin Klein
+          con un diseño versátil y urbano. Unas zapatillas pensadas para
+          complementar looks cotidianos con una estética elegante y contemporánea.
         </p>
 
         <ul class="beneficios">
-          <li>Diseño urbano y deportivo.</li>
-          <li>Ajuste cómodo para uso diario.</li>
-          <li>Ideal para jóvenes amantes de la moda y el béisbol.</li>
+          <li>Diseño moderno y sofisticado.</li>
+          <li>Color dorado que destaca en cualquier look.</li>
+          <li>Ideales para mujeres amantes de la moda y las tendencias.</li>
         </ul>
 
-        <p class="precio-anterior">Antes: $250.000 COP</p>
-        <p class="precio-actual">Hoy: $199.900 COP</p>
+        <p class="precio-anterior">Precio: COP $217.785,64</p>
+        <p class="precio-actual">Oferta: COP $152.449,95</p>
+
+        <span class="descuento">30% DE DESCUENTO</span>
+
+        <br><br>
 
         <a
           class="cta"
-          href="https://www.neweracap.com.co/gorra-new-york-yankees-mlb-seasonal-colors-9forty-ajustable-negro-new-era-60691059/p?gad_source=1&amp;gad_campaignid=22638798699&amp;gbraid=0AAAAAquPgKnLAepCxjOdNtb7NCYkAKN0L&amp;gclid=CjwKCAjw1bvTBhBbEiwAzbP8L4BPLSy9BilzN4juYugwU1Wxrk7-EiDTupRrDJ1xneXeGuHZGMCsohoCJYcQAvD_BwE"
+          href="https://www.amazon.com/-/es/Calvin-Klein-Tegin-mujer-Dorado/dp/B0BZWMQBVH/ref=sr_1_7?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3BXEEFDSXCT1F&dib=eyJ2IjoiMSJ9.TcC3439JbnrMqRBZ3hwC6Tg1YIO_P91-ryKz_yt7BB0KM4JdauDiCKd9JVOziMt_sZERWkTkvwHy8dkLzTdgcD9cFBOAf_Eoq91P2CIvFtR6ZUPIZ0AUPElBCKGsIsK5yUyFrOG4j_8-DE2j0gE6cEHVjMFFbu8rV9fSV1ieNe68IvJFt5hLk0Cq_PEEDevj0mrZ7Jh7sW6PKqbDymVVlzNKWyxb7emRmHgX-GDybktQZMZCcuX5rjEV4g-Rnji1Mpja4Dxh43iDOdn8bNvFJvcLx2w_P6_gJbgV8zYNFow.ZGpjEkBAiVLhxJh9eMV2JZb5nJze4-6xdb3UJApHExo&dib_tag=se&keywords=tacones&qid=1788616508&sprefix=tacones%2Caps%2C146&sr=8-7&th=1&psc=1"
           target="_blank"
           rel="noopener noreferrer">
           Comprar ahora
@@ -225,10 +254,10 @@
     </section>
 
     <section class="qr-section">
-      <h2>Explora la gorra desde tu celular</h2>
+      <h2>Explora las Tegin desde tu celular</h2>
       <p>
-        Escanea el código QR para abrir la experiencia y usar la realidad
-        aumentada desde un dispositivo compatible.
+        Escanea el código QR para abrir la experiencia y visualizar
+        las zapatillas en realidad aumentada desde un dispositivo compatible.
       </p>
 
       <div id="qrCode"></div>
@@ -236,7 +265,7 @@
   </main>
 
   <footer>
-    <p>Urban · Experiencia comercial WebAR</p>
+    <p>Calvin Klein · <span>Experiencia comercial WebAR</span></p>
   </footer>
 
   <script>
@@ -249,3 +278,4 @@
   </script>
 </body>
 </html>
+```
